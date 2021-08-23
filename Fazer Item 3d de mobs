@@ -1,0 +1,31 @@
+Modelo objeto simples
+
+-- esse codigo pega um modelo 3d e faz dele um item de enfeite 3d para loja
+
+minetest.register_node("modnome:itemnome", {
+
+description="itemdescricao",	light_source = 12,
+paramtype2 = "facedir",
+
+drawtype = "mesh",
+mesh = "modelo.b3d",
+tiles = {"textura.png"},
+
+visual_scale = 0.1,
+protetor = "singleplayer",
+pathfinding= false,
+
+groups = {	snappy=1,		choppy=2,	flammable=3,	oddly_breakable_by_hand=2,},
+
+selection_box = {
+		type = 'fixed',
+		fixed = {-1, -0, -1, 1, 2, 1},
+		},
+	collision_box = {
+		type = 'fixed',
+		fixed = {-1, -0, -1, 1, 2, 1},
+		},
+on_rightclick = function(self, clicker,rot)
+     minetest.chat_send_all("Voce clocou")
+end,
+})
