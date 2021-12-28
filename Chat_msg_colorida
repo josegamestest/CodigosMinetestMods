@@ -1,0 +1,6 @@
+on_rightclick = function(self, clicker, rot, texto, jogador)
+    if not clicker or not clicker:is_player() then return end
+    jogador=clicker:get_player_name()
+    
+minetest.chat_send_player(player, "esta e uma mensagem"}
+end,
