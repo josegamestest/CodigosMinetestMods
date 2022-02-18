@@ -1,0 +1,33 @@
+https://www.lua.org/pil/22.1.html
+
+%a nome abreviado do dia da semana (por exemplo, qua)
+%Um nome completo do dia da semana (por exemplo, quarta-feira)
+%b nome abreviado do mês (por exemplo, setembro)
+%B nome completo do mês (por exemplo, setembro)
+%c data e hora (por exemplo, 16/09/98 23:48:10)
+%d dia do mês (16) [01-31]
+%H hora, usando um relógio de 24 horas (23) [00-23]
+%I hora, usando um relógio de 12 horas (11) [01-12]
+%M minuto (48) [00-59]
+%m mês (09) [01-12]
+%p "am" ou "pm" (pm)
+%S segundo (10) [00-61]
+%w dia da semana (3) [0-6 = domingo-sábado]
+%x data (por exemplo, 16/09/98)
+%X tempo (por exemplo, 23:48:10)
+%Y ano completo (1998)
+%y ano de dois dígitos (98) [00-99]
+%% o caractere `%´
+
+--Lua sitema de data hora
+    local Ano=tonumber(os.date("%Y"))
+    local Mes=tonumber(os.date("%m"))
+    local Dia = tonumber(os.date("%d"))
+
+    local Hora =tonumber(os.date("%H"))
+    local Minuto =tonumber(os.date("%M"))
+    local Segundo =tonumber(os.date("%S"))
+--Mensagem com anom na tela do jogador
+
+jogador=clicker:get_player_name()
+minetest.chat_send_player(jogador,ano);
