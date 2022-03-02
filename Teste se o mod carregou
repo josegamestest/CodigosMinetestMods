@@ -1,0 +1,8 @@
+--Este codigo vai dentro de uma função
+Testando se o mod de armaduras esta instalado
+
+if minetest.global_exists("armor") then
+        minetest.chat_send_all("temos um mods de armaduras")
+    else
+        minetest.chat_send_all("Nao temos um mods de armaduras")
+    end
