@@ -1,0 +1,29 @@
+--montaria script
+after_activate = function(self,pointed_thing,pos)
+     --local ferramenta = clicker:get_wielded_item()
+            pos = self.object:get_pos()
+            --self.object:remove()
+            local mod_cima = minetest.add_entity(pos, "monstro_aranha_montado:esqueletomonstroarqueiro")
+            local ent = mod_cima:get_luaentity()
+            ent.health= self.health
+            ent.visual_size={x = 1, y = 1, z =1}
+            mod_cima:set_properties({physical=false,})
+            mod_cima:set_attach(self.object,"",{x = 0, y = 6, z =0}, {x = 0, y = 0, z = 0})
+            --mobs:set_animation(mod_cima, die)
+end,   
+
+do_custom = function(self, dtime)
+    if self.object:get_attach() then
+        self.object:set_properties({physical=true,})
+        
+    end
+end,
+
+
+--script mob montado
+do_custom = function(self, dtime)
+    if self.object:get_attach() then
+        self.object:set_properties({physical=true,})
+        --mobs:set_animation(self, die)
+    end
+end,
