@@ -1,0 +1,11 @@
+--Retorno de formulario
+minetest.register_on_player_receive_fields(function(player, formname, fields)
+--nome do arquivo e local
+  local nome_do_arquivo = minetest.get_worldpath() .. "/capacete.lua"
+--abrir para escrita
+	local salvar = io.open(nome_do_arquivo,'w')
+--escrita
+	salvar:write(minetest.serialize("test"))
+--fecha o arquivo
+	io.close(salvar)
+end)
