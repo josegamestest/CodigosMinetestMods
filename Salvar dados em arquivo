@@ -8,4 +8,20 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 	salvar:write(minetest.serialize("test"))
 --fecha o arquivo
 	io.close(salvar)
+	
+
+--abrir arquivo para leitura
+local arquivo = io.open(nome_do_arquivo, "r")
+	if arquivo then
+	--dados do arquivo
+	    local dados2 = {}
+	    --carrega dados
+	    local data = arquivo:read('*all')
+	    --pegando dados
+	    if data then dados2 = minetest.deserialize(data) end
+	    --mensagem de saida de dados
+	    minetest.chat_send_all(dados2)
+	    --fecha arquivos
+	    io.close(arquivo)    
+	end
 end)
