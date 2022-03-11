@@ -1,0 +1,26 @@
+--colocar uma objeto no jogador pelo osso
+minetest.register_on_player_receive_fields(function(player, formname, fields) 
+name = player:get_player_name(); --pega o nome do jogador
+local pos = minetest.get_player_by_name(name):get_pos() -- pega a posicao do jogador
+
+local ent1 = minetest.add_entity(pos, "nome_do_mode:nomedoitem") --define o objeto
+local player = minetest.get_player_by_name(name) --pega nome do jogador
+entidade:set_attach(player,"Arm_Right",{x=0, y=0, z=0},{x=-0, y=0, z=0}) --coloca o objecto no osso da mao esquerda
+entidade:set_properties({physical=false,}) --desativa a fisica do objeto
+minetest.chat_send_all("objecto colocado na smaos") --mostra uma mensage
+
+end
+
+--colocar no jogador sem posicao definida e sem colocar nos osso
+
+minetest.register_on_player_receive_fields(function(player, formname, fields) 
+name = player:get_player_name(); --pega o nome do jogador
+local pos = minetest.get_player_by_name(name):get_pos() -- pega a posicao do jogador
+
+local ent1 = minetest.add_entity(pos, "nome_do_mode:nomedoitem") --define o objeto
+local player = minetest.get_player_by_name(name) --pega nome do jogador
+entidade:set_attach(player,"",{x=0, y=0, z=0},{x=-0, y=0, z=0}) --coloca o objecto no osso da mao esquerda
+entidade:set_properties({physical=false,}) --desativa a fisica do objeto
+minetest.chat_send_all("objecto colocado na smaos") --mostra uma mensage
+
+end
