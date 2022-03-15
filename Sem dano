@@ -1,0 +1,5 @@
+--nao leva dano com ataques
+do_punch = function(self, hitter)
+        if hitter then
+            return false
+		end end,
