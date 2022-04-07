@@ -1,0 +1,32 @@
+--funcao para modificar fisica
+func = function(nome, param)
+		local player = minetest.get_player_by_name(nome)
+		player:set_physics_override({
+		                             gravity =1.0,
+		                             speed=1.0,
+		                             jump=1.0,
+		                             gravity=1.0,
+		                             sneak=?,
+		                             sneak_glitch=?})
+})
+	end
+--player:set_physics_override(physics.speed, physics.jump, physics.gravity)
+player:set_physics_override({gravity =1.0, speed=1.0, jump=1.0, gravity=1.0, sneak=?, sneak_glitch=?})
+
+--speed  
+--velocidade: multiplicador para o valor de velocidade de caminhada padrão (padrão: 1)
+
+--jump
+--salto: multiplicador para o valor de salto padrão (padrão: 1)
+
+--gravity
+--gravidade: multiplicador para o valor de gravidade padrão (padrão: 1)
+
+--sneak
+--sneak: se o jogador pode esgueirar-se (padrão: true)
+
+--falha furtiva
+--sneak_glitch: se o jogador pode usar o sneak glitch (padrão: true)
+
+end
+ 
