@@ -1,0 +1,56 @@
+
+
+-------------
+  Separator
+-------------
+
+2022-05-09 20:23:24: [Main]: Automatically selecting world at [/home/josea/test/minetest-5.4.0 compilado_jose/bin/../worlds/test_tile]
+2022-05-09 20:23:25: WARNING[Main]: Could not load icon file '/home/josea/test/minetest-5.4.0 compilado_jose/bin/../misc/minetest-xorg-icon-128.png'
+2022-05-09 20:23:25: ERROR[AsyncWorker-0]: Execution of async base environment failed: Failed to load and run script from /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua:
+2022-05-09 20:23:25: ERROR[AsyncWorker-0]: cannot open /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua: Arquivo ou diretório inexistente
+2022-05-09 20:23:25: ERROR[AsyncWorker-0]: In thread 7f255ffff700:
+2022-05-09 20:23:25: ERROR[AsyncWorker-0]: /home/josea/mine/5.4/minetest-5.4.0/src/script/cpp_api/s_async.cpp:cd: virtual void* AsyncWorkerThread::run(): A fatal error occurred: Execution of async base environment failed
+
+
+-------------
+  Separator
+-------------
+
+2022-05-09 20:23:30: [Main]: Automatically selecting world at [/home/josea/test/minetest-5.4.0 compilado_jose/bin/../worlds/test_tile]
+2022-05-09 20:23:30: WARNING[Main]: Could not load icon file '/home/josea/test/minetest-5.4.0 compilado_jose/bin/../misc/minetest-xorg-icon-128.png'
+2022-05-09 20:23:30: ERROR[AsyncWorker-0]: Execution of async base environment failed: Failed to load and run script from /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua:
+2022-05-09 20:23:30: ERROR[AsyncWorker-0]: cannot open /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua: Arquivo ou diretório inexistente
+2022-05-09 20:23:30: ERROR[AsyncWorker-0]: In thread 7f50af7fe700:
+2022-05-09 20:23:30: ERROR[AsyncWorker-0]: /home/josea/mine/5.4/minetest-5.4.0/src/script/cpp_api/s_async.cpp:cd: virtual void* AsyncWorkerThread::run(): A fatal error occurred: Execution of async base environment failed
+
+
+-------------
+  Separator
+-------------
+
+2022-05-09 20:23:31: [Main]: Automatically selecting world at [/home/josea/test/minetest-5.4.0 compilado_jose/bin/../worlds/test_tile]
+2022-05-09 20:23:31: WARNING[Main]: Could not load icon file '/home/josea/test/minetest-5.4.0 compilado_jose/bin/../misc/minetest-xorg-icon-128.png'
+2022-05-09 20:23:31: ERROR[AsyncWorker-0]: Execution of async base environment failed: Failed to load and run script from /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua:
+2022-05-09 20:23:31: ERROR[AsyncWorker-0]: cannot open /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua: Arquivo ou diretório inexistente
+2022-05-09 20:23:31: ERROR[AsyncWorker-0]: In thread 7f65a97da700:
+2022-05-09 20:23:31: ERROR[AsyncWorker-0]: /home/josea/mine/5.4/minetest-5.4.0/src/script/cpp_api/s_async.cpp:cd: virtual void* AsyncWorkerThread::run(): A fatal error occurred: Execution of async base environment failed
+
+
+-------------
+  Separator
+-------------
+
+2022-05-09 20:23:45: [Main]: Automatically selecting world at [/home/josea/test/minetest-5.4.0 compilado_jose/bin/../worlds/test_tile]
+2022-05-09 20:23:45: WARNING[Main]: Could not load icon file '/home/josea/test/minetest-5.4.0 compilado_jose/bin/../misc/minetest-xorg-icon-128.png'
+2022-05-09 20:23:45: ERROR[AsyncWorker-0]: Execution of async base environment failed: Failed to load and run script from /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua:
+2022-05-09 20:23:45: ERROR[AsyncWorker-0]: cannot open /home/josea/test/minetest-5.4.0 compilado_jose/bin/../builtin/init.lua: Arquivo ou diretório inexistente
+2022-05-09 20:23:45: ERROR[AsyncWorker-0]: In thread 7f3d50874700:
+2022-05-09 20:23:45: ERROR[AsyncWorker-0]: /home/josea/mine/5.4/minetest-5.4.0/src/script/cpp_api/s_async.cpp:cd: virtual void* AsyncWorkerThread::run(): A fatal error occurred: Execution of async base environment failed
+
+
+-------------
+  Separator
+-------------
+
+2022-05-09 20:24:05: [Main]: Automatically selecting world at [/home/josea/test/minetest-5.4.0 compilado_jose/bin/../worlds/test_tile]
+2022-05-09 20:24:05: WARNING[Main]: Could not load icon file '/home/josea/test/minetest-5.4.0 compilado_jose/bin/../misc/minetest-xorg-icon-128.png'
