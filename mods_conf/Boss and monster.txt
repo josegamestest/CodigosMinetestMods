@@ -1,0 +1,29 @@
+Server conf
+
+MOBS HEDO
+	mob_difficulty 1
+	mob_chance_multiplier 1.0
+	mob_spawn_range 12.0
+	mob_active_limite 0
+	mob_smooth_rotate Disable
+----------------------------------------------
+Entity
+  Boss
+    hp_min=150,
+    hp_max=200,
+    armor=150,
+    attack_chance=100,
+    walk_velocity=2,
+    run_velocity=5,
+    walk_chance=50,
+    jump_height=5,
+    view_range=10,
+    stepheight=5.5,
+    damage=20,
+    fear_height=0,
+    floats=0,	
+    fall_damage=2,
+    water_damage=0,
+    lava_damage=3,
+    light_damage=1,
+    reach=5,
