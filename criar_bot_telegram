@@ -1,0 +1,25 @@
+<html>
+<h1>Tutorial Telegram</h1>
+------------------------------------------------------------------------------------------------------------
+<div>
+  <p>
+    pesquisa o botfather oficial no telegram
+    dentro da concerça digite /help  para ver os recursos do bot
+    1 /newbot e o comando para criar o bot para convercar com o mod
+    2 escreva o nome do seu bot na linha de mensagem
+    3 Um nome de usuario para o bot que termine com _bot exemplo: test_bot e o enderecodo do seu bot "t.me/nomedobot_bot.
+      Recebera tambem uma chave HTTP API: tokey:"" Nao mostre esta chave para ninguem
+  </p>  
+</div>
+------------------------------------------------------------------------------------------------------------
+<div>
+  <h3>deletando</h3>
+  <p>
+    para deletar um bot basta entrar no botfather oficial no telegram
+    e digitar o comando /deletebot
+    clicar na opcao com nome do bot
+    depois escrever "Yes, I am totally sure."
+    se escrever errado o bot nao apaga tem de ser exatamente "Yes, I am totally sure."
+  </p>
+</div>
+</html>
