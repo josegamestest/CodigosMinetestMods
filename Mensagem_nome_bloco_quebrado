@@ -1,0 +1,8 @@
+--Creditos openai e joseanastacio
+minetest.register_on_dignode(function(pos, oldnode, digger)
+  -- Verifique se o node que foi quebrado é um determinado tipo de bloco
+  if oldnode.name == "default:dirt" then
+    -- Envie uma mensagem para o jogador que quebrou o bloco
+    minetest.chat_send_player(digger:get_player_name(), "Você quebrou um bloco de terra!")
+  end
+end)
