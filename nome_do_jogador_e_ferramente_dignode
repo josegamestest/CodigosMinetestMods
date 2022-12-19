@@ -1,0 +1,11 @@
+minetest.register_on_dignode(function(pos, oldnode, digger)
+    if oldnode.name == "mymod:special_node" then
+        -- Verifique se o jogador tem a ferramenta adequada para quebrar o nó
+        local player = minetest.get_player_by_name(digger:get_player_name())
+        local wielded_item = player:get_wielded_item():get_name()
+        if wielded_item ~= "mymod:special_tool" then
+            -- O jogador não tem a ferramenta adequada, então cancele a quebra do nó
+            return true
+        end
+    end
+end)
