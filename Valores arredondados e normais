@@ -1,0 +1,26 @@
+local mod_nome_iten="itens_perdidos";
+local quantidade={"1","2"};
+local itens = {
+		--{itens de troca}
+    {"1"},
+    {"2"},
+    {"3"},
+    {"4"},
+    {"5"},
+    {"6"},		
+		{"7"},
+    {"8"},
+    {"9"},
+    {"10"},
+};
+
+--Valor normal
+local random_item=math.random(1,table.maxn(itens))
+local rand_quant=math.random(1,table.maxn(quantidade))
+
+--valores arredondados
+local random_item1=math.floor(math.random(1,table.maxn(itens)))
+local rand_quant1=math.floor(math.random(1,table.maxn(quantidade)))		
+
+--mostra mensagen
+minetest.chat_send_player("Normal.."random_item.." "..rand_quant.." Arrendodados ".."random_item1.." "..rand_quant1)
