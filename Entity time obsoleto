@@ -1,0 +1,10 @@
+--Entity time obsoleto
+on_step= function(self,pos,dtime)
+			if self.object:get_attach()then
+				step = step + 4
+				minetest.chat_send_all(step)
+				if step >= 360 then step=0
+					elseif step <= 0 then step=360
+				end
+      end
+end
