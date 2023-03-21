@@ -1,0 +1,12 @@
+for _, ob in pairs(minetest.get_objects_inside_radius(self.object:get_pos(), 1)) do
+					if ob:get_luaentity() and ob:is_player()==false and ob:get_luaentity().name == "mod_nome:objeto" and ob:get_attach() then
+					local posicao_objeto=self.object:get_pos()
+						ob:set_detach()
+						local rotacao_veiculo = self.object:get_rotation()
+						local objeto_offset = vector.rotate({x=0, y=0, z=0}, rotacao_veiculo) -- vetor para trás do trator
+						local objeto_pos = vector.add(posicao_objeto, objeto_offset)
+						ob:set_pos(objeto_pos)
+
+						ob:set_rotation(objeto_rot)
+					end
+				end
