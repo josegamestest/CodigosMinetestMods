@@ -1,0 +1,9 @@
+function trator.on_punch(self, puncher)
+local objeto = self.object:get_attach()
+    if objeto then
+    local luaentity = objeto:get_luaentity()
+    if luaentity then
+      local nome_objeto = luaentity.name
+      minetest.chat_send_all(nome_objeto)
+    end
+end
