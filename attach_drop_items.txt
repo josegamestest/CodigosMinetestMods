@@ -1,0 +1,21 @@
+if self.ativo==true then
+  local pos=self.object:get_pos()	
+  for _, obj_ in pairs(minetest.get_objects_inside_radius(pos, 5)) do
+  local ent = obj_:get_luaentity()
+  if ent and ent.name == "__builtin:item" and ent.physical_state then
+    ent:disable_physics()
+    local pos_add_x= math.random(-3,15)
+    local pos_add_z= math.random(-15,-50)
+    obj_:set_attach(self.object, "",{x=pos_add_x, y=6, z=pos_add_z}, {x=0, y=0, z=0})
+    self.attached_items[#self.attached_items + 1] = obj_
+  end
+end
+else for _, item in ipairs(self.attached_items) do
+   local ent = item:get_luaentity()
+   if ent and ent.name == "__builtin:item" and not ent.physical_state then
+     ent:enable_physics()
+     item:set_detach()
+     local pos=self.object:get_pos()
+     item:set_pos({x = pos.x + math.random(-2, 2),y = pos.y,z = pos.z + math.random(2, -2)})
+   end
+end
